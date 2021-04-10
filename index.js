@@ -27,7 +27,6 @@ function getTaxRate() {
   var input = Number(document.getElementById("principalAmt").value);
   var rate = Number(document.getElementById("rate").value);
   var validate = validateInput(input);
-  console.log('rateee', rate)
   if (!input || !rate) p.innerHTML = `<p>No Input Provided</p>`;
   else {
     if (validate) {
