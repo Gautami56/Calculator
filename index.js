@@ -1,16 +1,16 @@
 function getCredit(argument) {
   var result;
   var p = document.getElementById("para");
-  var input = document.getElementById("principalInput").value;
-  var inputScale = document.getElementById("scaleInput").value;
+  var input = Number(document.getElementById("principalInput").value);
+  var inputScale = Number(document.getElementById("scaleInput").value);
   var validate = validateInput(input);
   if (!input || !inputScale) p.innerHTML = `<p>No Input Provided</p>`;
   else {
     if (validate) {
       result =
         argument === "credit"
-          ? Number(input) + Number(inputScale)
-          : Number(input) - Number(inputScale);
+          ? input + inputScale
+          : input - inputScale;
       p.innerHTML =
         argument === "credit"
           ? `<p>Credited Amount is ${result} </p>`
