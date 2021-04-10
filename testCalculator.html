@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+      }
+      .form-box {
+        margin-top: 1%;
+        display: flex;
+        width: 60%;
+        height: 80%;
+      }
+      .form-box > div {
+        border: 1px solid black;
+        height: 75%;
+        flex-grow: 1;
+      }
+      .for1 {
+        width: 200px;
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-box">
+        <div>
+          <div class="for1">
+            <label>Principal Amount</label>
+            <input id="principalInput" type="number" />
+            <br /><br />
+            <label>Credit/Debit Amount</label>
+            <input id="scaleInput" type="number" min="2000" />
+            <br /><br />
+            <button id="credit" onclick="getCredit('credit')">
+              Credit Amount
+            </button>
+            <button id="debit" onclick="getCredit('debit')">
+              Debit Amount
+            </button>
+            <br />
+            <p id="para">The total amount is</p>
+          </div>
+        </div>
+        <div>
+          <div class="for1">
+            <label>Principal Amount</label>
+            <input id="principalAmt" type="number" />
+            <br /><br />
+
+            <label>Tax Rate</label>
+            <input id="rate" type="number" />
+
+            <br /><br />
+            <button onclick="getTaxRate()">Calculate totalAmount</button>
+            <br />
+            <p id="paraRate">The total tax rate amount is</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

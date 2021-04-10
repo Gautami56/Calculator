@@ -1,0 +1,43 @@
+
+Requirement -
+1. To show the total credited amount by allowing user to provide the principal amount and the amount to be credited
+2. To show the total amount debited by allowing user to provide the principal amount and the amount to be debited
+3. To show the total amount generated with rate of interest anually by  allowing user to provide the principal amount and the rate of interest
+4. The user should be able to provide principal amount greater than or equal to 2000 and less than or equal to 10,000
+
+
+$pseudo code
+Case 1 - 
+#if user clicks on get credit/debit
+    #if input exists
+         #if input validation successfull
+         print total amount credited/debited
+         else
+           print 'Input should be between 2000 and 10000'
+    else
+      print 'Input not provided'
+
+
+Case 2 - 
+#if user clicks on getTaxRate
+    #if input exists
+         #if input validation successfull
+         print total amount calculate with rate of interest
+         else
+           print 'Input should be between 2000 and 10000'
+    else
+      print 'Input not provided'
+         
+
+    
+
+
+
+
+
+
+
+
+
+
+
